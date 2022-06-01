@@ -2,8 +2,24 @@
 A prometheus exporter for Juniper SRX dataplane logs shipped with kafka
 
 
-> usage: go run main.go -bootstapservers "kafkahostname:9092" -group yourgroupname -topic yourtopicname
+> usage: 
+> go build -o fwpolicymetrics cmd/main.go
+> 
+> ./fwpolicymetrics -bootstapservers "kafkahostname:9092" -group yourgroupname -topic yourtopicname
 
+>Usage of ./fwpolicymetrics:
+  -bootstapservers string
+    	Kafka servers (default "localhost")
+  -group string
+    	Kafka consumer group (default "localgroup")
+  -host string
+    	Exporter host (default "127.0.0.1")
+  -offset string
+    	Kafka offet strategy (default "latest")
+  -port string
+    	Exporter port (default "8080")
+  -topic string
+    	Kafka topic to consume (default "mytopic")
 
 ### metrics
 
