@@ -1,4 +1,6 @@
 # fwpolicymetrics
+
+![image info](./exporter.png)
 A prometheus exporter for Juniper SRX dataplane logs shipped with kafka
 
 
@@ -56,3 +58,7 @@ rt_flow_session_total{action="permit",destination="zone2",hostname="mydevice",po
 \# HELP syslog_messages_error_total How many messages failed in parser
 \# TYPE syslog_messages_error_total counter
 syslog_messages_error_total{type="rfc5424"} 76
+
+
+
+![image info](./flow.png)
